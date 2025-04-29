@@ -1,0 +1,73 @@
+.favorites-page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-2);
+}
+
+.favorites-header {
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+
+.favorites-header h1 {
+  font-size: 2rem;
+  margin-bottom: var(--space-1);
+}
+
+.favorites-header p {
+  color: var(--color-text-light);
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.empty-favorites {
+  text-align: center;
+  padding: var(--space-6) 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.empty-favorites .material-symbols-outlined {
+  font-size: 4rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+
+.empty-favorites h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-1);
+}
+
+.empty-favorites p {
+  color: var(--color-text-light);
+  margin-bottom: var(--space-3);
+}
+
+.shop-now-button {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.shop-now-button:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .favorites-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2);
+  }
+}
